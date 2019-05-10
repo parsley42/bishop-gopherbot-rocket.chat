@@ -6,14 +6,14 @@
 
 ## List of users that can issue admin commands like reload, quit. Should be
 ## a list of user handles / nicks. Added to value(s) from GOPHER_ADMIN.
-AdminUsers: [ "dlp7y" ]
+AdminUsers: [ "parsley42" ]
 
 ## Provided by 'info'
 #AdminContact: "Your Name, <you@your.dom>"
 
 ## Channels where plugins will be available by default if none explicitly
 ## configured for a plugin.
-DefaultChannels: [ "general", "random" ]
+DefaultChannels: [ "general", "botdev" ]
 
 ## This can also be specified with GOPHER_ALIAS in '.env', or in
 ## 'gopherbot.env' in the root of the custom configuration repository.
@@ -88,9 +88,9 @@ BotInfo:
 # Slack will eventually stop sending a username in messages, so we need
 # to map usernames to user ID's here, for consistency and ease of use
 # for e.g. group membership.
-UserRoster:
-- UserName: "dlp7y"
-  UserID: "UAJ6JE5E0"
+#UserRoster:
+#- UserName: "dlp7y"
+#  UserID: "UAJ6JE5E0"
 ## Floyd is the production robot that builds gopherbot,
 ## thus 'BotUser: true'
 #- UserName: floyd
