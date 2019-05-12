@@ -71,6 +71,13 @@ Alias: ":"
 ## Optional; all you really need can be put in GOPHER_BOTNAME,
 ## GOPHER_BOTFULLNAME, and GOPHER_BOT_EMAIL environment variables.
 
+Protocol: rocket
+
+ProtocolConfig:
+  Server: https://open.rocket.chat
+  Email: {{ env "GOPHER_ROCKET_EMAIL" }}
+  Password: {{ env "GOPHER_ROCKET_PASSWORD" }}
+
 BotInfo:
   UserName: "Bishop"
 #  Email: clu@linuxjedi.org
