@@ -13,9 +13,11 @@ AdminUsers: [ "parsley42" ]
 
 ## Channels where plugins will be available by default if none explicitly
 ## configured for a plugin.
-DefaultChannels: [ "general", "botdev" ]
+#DefaultChannels: [ "general", "botdev" ]
+DefaultChannels: [ "botdev" ]
+DefaultJobChannel: botdev
 
-JoinChannels: [ "general", "botdev" ]
+#JoinChannels: [ "general", "botdev" ]
 
 ## This can also be specified with GOPHER_ALIAS in '.env', or in
 ## 'gopherbot.env' in the root of the custom configuration repository.
