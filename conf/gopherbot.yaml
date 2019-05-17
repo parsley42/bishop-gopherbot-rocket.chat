@@ -6,7 +6,7 @@
 
 ## List of users that can issue admin commands like reload, quit. Should be
 ## a list of user handles / nicks. Added to value(s) from GOPHER_ADMIN.
-AdminUsers: [ "parsley42" ]
+AdminUsers: [ "parse" ]
 
 ## Provided by 'info'
 #AdminContact: "Your Name, <you@your.dom>"
@@ -21,7 +21,7 @@ DefaultJobChannel: botdev
 
 ## This can also be specified with GOPHER_ALIAS in '.env', or in
 ## 'gopherbot.env' in the root of the custom configuration repository.
-Alias: ":"
+Alias: ";"
 
 ## List of users that the robot won't even 'hear'. Note that if you put other
 ## robot / webhook IDs in the UserRoster with 'TriggersOnly: true', you can
@@ -43,10 +43,10 @@ Alias: ":"
 #  - "Hello, World !!!"
 
 ## An example of configuring an external plugin script.
-#ExternalPlugins:
-#  "echo":
-#    Description: Trivial bash plugin
-#    Path: plugins/echo.sh
+ExternalPlugins:
+  "echo":
+    Description: Trivial bash plugin
+    Path: plugins/echo.sh
 
 ## Example configuration for an external job script.
 #ExternalJobs:
@@ -64,7 +64,7 @@ Alias: ":"
 ## for help on changing the log level and viewing contents of the log.
 ## The default of "debug" is quite verbose, "info" is recommended.
 
-#LogLevel: info
+#LogLevel: trace
 
 ## If your history logs are in a directory being served by a webserver,
 ## put the URLPrefix here.
