@@ -14,7 +14,7 @@ AdminUsers: [ "parse" ]
 ## Channels where plugins will be available by default if none explicitly
 ## configured for a plugin.
 #DefaultChannels: [ "general", "botdev" ]
-DefaultChannels: [ "botdev" ]
+DefaultChannels: [ "botdev", "gbdev" ]
 DefaultJobChannel: botdev
 
 #JoinChannels: [ "general", "botdev" ]
@@ -46,7 +46,7 @@ Alias: ";"
 ExternalPlugins:
   "echo":
     Description: Trivial bash plugin
-    Path: plugins/echo.sh
+    Path: plugins/samples/echo.sh
 
 ## Example configuration for an external job script.
 #ExternalJobs:
